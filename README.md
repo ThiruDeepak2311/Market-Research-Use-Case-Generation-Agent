@@ -46,7 +46,23 @@ The **AI Use Case Generator** is a modular, multi-agent system designed to gener
    - Allows users to upload the generated PDF or any valid PDF.
    - Uses FAISS and Hugging Face APIs to answer questions interactively.
   
-[User Input: Industry & Company Details] --> [Industry Research Agent] --> [Use Case Generation Agent] --> [Resource Asset Collection Agent] --> [PDF Analysis Tool] --> [Final Proposal Generator] --> [AI Chatbot] --> [Output/Deliverables]
+# Workflow: AI Use Case Generator with Final Proposal Tool
+
+[User Input: Industry & Company Details]  
+   ↓  
+[Industry Research Agent]  
+   ↓  
+[Use Case Generation Agent]  
+   ↓  
+[Resource Asset Collection Agent]  
+   ↓  
+[PDF Analysis Tool]  
+   ↓  
+[Final Proposal Generator]  
+   ↓  
+[AI Chatbot]  
+   ↓  
+[Output/Deliverables]
 
 
 ## Installation
