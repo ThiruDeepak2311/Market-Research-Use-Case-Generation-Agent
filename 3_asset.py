@@ -4,9 +4,9 @@ from kaggle.api.kaggle_api_extended import KaggleApi
 import requests
 
 # API Keys and Configurations
-HUGGINGFACE_API_KEY = "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"
-GITHUB_API_KEY = "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"
-KAGGLE_JSON_PATH = r"C:\Users\Deepak Thirukkumaran\OneDrive\Documents\College\Projects\AIplanet\kaggle.json"
+HUGGINGFACE_API_KEY = "your hugging face token"
+GITHUB_API_KEY = "your github secret"
+KAGGLE_JSON_PATH = r"location to your kaggle api json file"
 
 
 def setup_kaggle_api(api_path):
