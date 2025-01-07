@@ -2,7 +2,7 @@ import json
 import cohere
 
 # Initialize Cohere Client
-COHERE_API_KEY = "2lsphdgSl6HTz6KZJ5uMxT2yPZBdDTRtANGkv8Xh"
+COHERE_API_KEY = "your cohere key"
 co = cohere.Client(COHERE_API_KEY)
 
 def generate_use_cases(industry_trends, company_details, competitors):
