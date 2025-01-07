@@ -1,89 +1,121 @@
-🌟 AI Use Case Generator with Final Proposal Tool
-This project is a Multi-Agent System designed to generate relevant AI and Generative AI (GenAI) use cases for industries or companies. It includes a Final Proposal Generator that compiles actionable insights and feasibility analysis into a downloadable report.
 
-✨ Features
-Industry Trend Analysis:
+# AI Use Case Generator
 
-Fetches the latest industry trends using APIs.
-Analyzes company details to align AI solutions with business goals.
-AI Use Case Generator:
+The **AI Use Case Generator** is a modular, multi-agent system designed to generate actionable AI and Generative AI (GenAI) use cases for specific industries or companies. The system conducts in-depth research, proposes innovative AI use cases, fetches relevant datasets, and generates a professional PDF report. Additionally, it includes an interactive AI Chat System to query the report for insights.
 
-Generates relevant AI/GenAI use cases based on industry trends and company details.
-Provides use cases with practical applications to enhance operations and customer experiences.
-Resource Asset Collection:
+## Key Features
+1. **Multi-Agent Workflow**:
+   - **Research Agent**: Collects industry trends, competitors, and company details using APIs.
+   - **Use Case Agent**: Generates AI/GenAI use cases with problems, solutions, impacts, and differentiators.
+   - **Resource Asset Agent**: Fetches relevant datasets from Kaggle, Hugging Face, and GitHub.
+   - **PDF Report Generator**: Creates a structured, professional PDF summarizing all findings.
+   - **AI Chat System**: Interactive chatbot to answer questions about the generated PDF.
 
-Searches for relevant datasets from platforms like Kaggle, HuggingFace, and GitHub.
-Saves the dataset links in a downloadable markdown file.
-Final Proposal Generator:
+2. **APIs and Tools Used**:
+   - **Serper API**: For fetching industry trends, competitors, and company details.
+   - **Cohere API**: For generating AI/GenAI use cases.
+   - **Hugging Face API**: For contextual question-answering and fetching datasets.
+   - **Kaggle API**: For fetching relevant datasets.
+   - **GitHub API**: For finding repositories with relevant datasets.
+   - **FAISS**: For creating embeddings and enabling efficient context retrieval for the chatbot.
 
-Compiles use cases into a structured report.
-Includes feasibility analysis and actionable insights for implementation.
-Provides a downloadable Markdown file as the final deliverable.
-PDF Analysis Tool:
+3. **Technologies**:
+   - **Streamlit**: For building an interactive and user-friendly interface.
+   - **FPDF**: For generating structured PDF reports.
+   - **PyPDF2**: For extracting text from PDF files.
+   - **SentenceTransformers**: For creating embeddings for the chatbot.
+   - **FAISS**: For enabling fast similarity searches in the AI Chat System.
 
-Extracts text from uploaded PDF documents.
-Generates embeddings for advanced analysis and retrieval.
-📁 File Structure
-main_app.py : Streamlit app integrating all features.
-final_proposal.md : Downloadable final proposal generated during the process.
-resources.md : Markdown file containing resource links for datasets.
-🛠️ Tech Stack
-Programming Language:
+## Workflow
+1. **Research Agent**:
+   - Fetches industry trends using the Serper API.
+   - Retrieves competitor details and company overview.
+   - Outputs structured data for downstream agents.
 
-Python
-Libraries/Frameworks:
+2. **Use Case Agent**:
+   - Uses Cohere API to generate 5 actionable AI use cases based on research data.
+   - Includes problem statements, solutions, impacts, and differentiation strategies.
 
-Streamlit for building the user interface.
-Cohere for text generation and embeddings.
-Kaggle API for dataset retrieval.
-Requests for API calls.
-APIs:
+3. **Resource Asset Agent**:
+   - Fetches relevant datasets from Kaggle, Hugging Face, and GitHub to support AI use cases.
 
-Serper API for trend analysis.
-Google Knowledge Graph API for company insights.
-🚀 How to Run the Application
-Clone the Repository:
+4. **PDF Report Generator**:
+   - Generates a well-structured PDF summarizing industry insights, use cases, and datasets.
 
-bash
-Copy code
-git clone https://github.com/your-username/ai-use-case-generator.git
-cd ai-use-case-generator
-Install Dependencies: Ensure Python 3.8+ is installed, then run:
+5. **AI Chat System**:
+   - Allows users to upload the generated PDF or any valid PDF.
+   - Uses FAISS and Hugging Face APIs to answer questions interactively.
 
-bash
-Copy code
-pip install -r requirements.txt
-Set API Keys: Create a .env file with your API keys:
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ai-use-case-generator.git
+   cd ai-use-case-generator
+   ```
 
-makefile
-Copy code
-SERPER_API_KEY=your_serper_api_key
-KNOWLEDGE_GRAPH_API_KEY=your_google_api_key
-COHERE_API_KEY=your_cohere_api_key
-Run the App:
+2. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-bash
-Copy code
-streamlit run main_app.py
-📜 Final Proposal Report Example
-The Final Proposal report includes:
+3. Add API keys:
+   - Create a `.env` file or directly add your API keys in the script:
+     ```
+     SERPER_API_KEY = "your-serper-api-key"
+     COHERE_API_KEY = "your-cohere-api-key"
+     HUGGINGFACE_API_KEY = "your-huggingface-api-key"
+     GITHUB_API_KEY = "your-github-api-key"
+     KAGGLE_JSON_PATH = "path/to/your/kaggle.json"
+     ```
 
-Generated Use Cases:
+4. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
 
-AI-powered supply chain.
-Customer personalization.
-Feasibility Analysis:
+## How to Use
+1. **Research Agent**:
+   - Enter the industry and company name.
+   - Fetches trends, competitors, and company details.
 
-Evaluates dataset availability and industry relevance.
-Actionable Insights:
+2. **Use Case Agent**:
+   - Generates innovative AI use cases based on research data.
 
-Outlines next steps for implementation.
-Industry Trends:
+3. **Resource Asset Agent**:
+   - Fetches datasets supporting the AI use cases.
 
-Summarizes key trends influencing AI adoption.
-🧠 Future Enhancements
-Integrate additional dataset sources (e.g., AWS Open Data, Data.gov).
-Enhance the PDF analysis tool with semantic search capabilities.
-Allow custom prompts for advanced use case generation.
-📄 License
-This project is licensed under the MIT License.
+4. **PDF Report Generator**:
+   - Generates a professional PDF summarizing findings.
+
+5. **AI Chat System**:
+   - Upload a PDF file and interact with it through the chatbot.
+
+## File Structure
+```
+ai-use-case-generator/
+├── app.py                     # Main Streamlit application file
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+├── utils/                     # Utility functions
+│   ├── research_agent.py      # Research Agent logic
+│   ├── use_case_agent.py      # Use Case Agent logic
+│   ├── resource_asset_agent.py# Resource Asset Agent logic
+│   ├── pdf_report_generator.py# PDF generation logic
+│   ├── ai_chat_system.py      # AI Chat System logic
+└── assets/                    # Additional assets (e.g., diagrams, images)
+```
+
+## Example Outputs
+- **PDF Report**:
+  A structured document containing:
+  - Industry trends
+  - AI/GenAI use cases
+  - Relevant datasets
+
+- **Chat System**:
+  Interact with the PDF report to get detailed answers.
+
+## Future Enhancements
+- Add support for more dataset platforms (e.g., Databricks, Azure ML).
+- Improve chatbot accuracy with fine-tuned models.
+- Add real-time performance monitoring for all agents.
