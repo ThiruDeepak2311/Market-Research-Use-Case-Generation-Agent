@@ -45,6 +45,38 @@ The **AI Use Case Generator** is a modular, multi-agent system designed to gener
 5. **AI Chat System**:
    - Allows users to upload the generated PDF or any valid PDF.
    - Uses FAISS and Hugging Face APIs to answer questions interactively.
+  
+[User Input: Industry & Company Details]
+          ↓
+[Industry Research Agent]
+ - Fetches trends using Serper API
+ - Retrieves company insights via Google Knowledge Graph API
+          ↓
+[Use Case Generation Agent]
+ - Cohere API for text generation
+ - Generates actionable AI/GenAI use cases
+          ↓
+[Resource Asset Collection Agent]
+ - Searches for datasets on Kaggle, HuggingFace, GitHub
+ - Saves dataset links in resources.md
+          ↓
+[PDF Analysis Tool]
+ - Extracts text from PDFs
+ - Generates embeddings for advanced analysis
+          ↓
+[Final Proposal Generator]
+ - Compiles use cases and resources into a downloadable report
+ - Includes feasibility and actionable insights
+          ↓
+[AI Chatbot]
+ - Provides a conversational interface to discuss generated insights
+ - Uses the Cohere or other AI model for real-time Q&A
+          ↓
+[Output/Deliverables]
+ - Downloadable resources.md
+ - Downloadable final_proposal.md
+ - Interactive AI Chatbot for further exploration
+
 
 ## Installation
 1. Clone the repository:
