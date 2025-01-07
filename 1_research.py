@@ -5,8 +5,8 @@ import cohere
 import json
 
 # API Keys
-SERPER_API_KEY = "72133600e1fc14e4ebccb6983dcff0f24fd9acac"  # Ensure this is vali
-COHERE_API_KEY = "2lsphdgSl6HTz6KZJ5uMxT2yPZBdDTRtANGkv8Xh"
+SERPER_API_KEY = "your serper key"  
+COHERE_API_KEY = "your cohere key"
 co = cohere.Client(COHERE_API_KEY)
 
 def fetch_industry_trends(industry, num_results=5):
