@@ -3,6 +3,11 @@
 
 The **AI Use Case Generator** is a modular, multi-agent system designed to generate actionable AI and Generative AI (GenAI) use cases for specific industries or companies. The system conducts in-depth research, proposes innovative AI use cases, fetches relevant datasets, and generates a professional PDF report. Additionally, it includes an interactive AI Chat System to query the report for insights.
 
+## Demo
+https://private-user-images.githubusercontent.com/116452492/400663327-939b29ec-80ee-41f2-b94c-d37b24f4665b.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzYyMzI1NzgsIm5iZiI6MTczNjIzMjI3OCwicGF0aCI6Ii8xMTY0NTI0OTIvNDAwNjYzMzI3LTkzOWIyOWVjLTgwZWUtNDFmMi1iOTRjLWQzN2IyNGY0NjY1Yi5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEwN1QwNjQ0MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lODJiMjhjYjlhMDU4Yjk5OTQyZDBmYTZlMmIwMjEwNjMxNmMwMWEwZTExNjFmOGM3ZmRkZDQ3MGUxODlmNzEzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.z0IuKARBPl2BqVy3xmI8j_VOO5Inls2bXBcQ4CJIgvw
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Key Features
 1. **Multi-Agent Workflow**:
    - **Research Agent**: Collects industry trends, competitors, and company details using APIs.
