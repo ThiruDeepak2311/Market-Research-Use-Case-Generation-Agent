@@ -12,11 +12,11 @@ import numpy as np
 import streamlit as st
 
 # Configure environment and logging
-SERPER_API_KEY = os.getenv("SERPER_API_KEY", "72133600e1fc14e4ebccb6983dcff0f24fd9acac")
-COHERE_API_KEY = os.getenv("COHERE_API_KEY", "2lsphdgSl6HTz6KZJ5uMxT2yPZBdDTRtANGkv8Xh")
-HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY", "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")
-GITHUB_API_KEY = os.getenv("GITHUB_API_KEY", "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")
-KAGGLE_JSON_PATH = os.getenv("KAGGLE_JSON_PATH", r"C:\\path\\to\\kaggle.json")
+SERPER_API_KEY = os.getenv("SERPER_API_KEY", "your serper api key")
+COHERE_API_KEY = os.getenv("COHERE_API_KEY", "your cohere api key")
+HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY", "your hugging face token")
+GITHUB_API_KEY = os.getenv("GITHUB_API_KEY", "your github secret")
+KAGGLE_JSON_PATH = os.getenv("KAGGLE_JSON_PATH", r"location to kaggle api json file")
 
 # Initialize Cohere Client
 co = Client(COHERE_API_KEY)
